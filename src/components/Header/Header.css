@@ -1,0 +1,18 @@
+.header-nav-link {
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* text-shadow: 0 0 8px rgba(255, 255, 255, 100); */
+    text-shadow: -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff, 0.5px 0.5px 0 #fff;
+    /* -webkit-text-stroke: -1.5px white; */
+}
+
+@media screen and (max-width: 800px) {
+    .header-nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

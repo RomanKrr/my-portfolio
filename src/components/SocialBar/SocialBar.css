@@ -1,0 +1,24 @@
+.social-bar {
+    position: fixed;
+    z-index: 999;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    /* border: 1.8px solid rgb(255, 255, 255); */
+    border: 1.5px solid rgb(0, 0, 0);
+    padding: 7px;
+    border-radius: 0px 6px 6px 0px;
+}
+
+.social-bar-icon {
+    transition: transform 0.3s ease-in-out;
+    /* Плавна анімація збільшення */
+}
+
+.social-bar-icon:hover {
+    transform: scale(1.2);
+    /* Збільшення до 120% при наведенні */
+}

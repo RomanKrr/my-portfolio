@@ -1,23 +1,26 @@
+import React from 'react'
+import AOS from 'aos';
 import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import About from './components/About/About';
+import Header from './components/Header/Header';
+import MyStory from './components/MyStory/MyStory';
+import SocialBar from './components/SocialBar/SocialBar';
+import ScrollProgressBar from './components/ScrollProgressBar';
+import Skills from './components/Skills/Skills';
+import Projects from './components/Projects/Projects';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <About />
+      <MyStory />
+      <SocialBar />
+      <ScrollProgressBar/>
+      <Skills/>
+      <Projects/>
     </div>
   );
 }

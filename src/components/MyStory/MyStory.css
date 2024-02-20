@@ -1,0 +1,93 @@
+.my-story{
+    height: 100%;
+    padding-top: 100px;
+}
+.story-text {
+    font-family: Poppins;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+}
+
+
+
+.arrow-container {
+    position: relative;
+}
+
+.animated-text {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    /* Відстань від стрілки */
+    transform: translateY(-50%);
+    animation: spin 20s linear infinite;
+    color: white;
+    font-family: Poppins;
+
+    /* Анімація обертання */
+}
+.img-first{
+    width: 320px;
+    height: 450px;
+    object-fit: cover;
+    border: 1px solid rgb(255, 163, 0);
+    animation: moveDown 2.5s infinite alternate;
+}
+.img-first:hover{
+    animation-play-state: paused;
+}
+.img-second {
+    width: 280px;
+    height: 450px;
+    object-fit: cover;
+    border: 1px solid rgb(255, 163, 0);
+    animation: moveUp 2.5s infinite alternate;
+}
+.img-second:hover{
+    animation-play-state: paused;
+}
+@keyframes moveUp {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-20px); /* Змініть значення на бажану висоту */
+    }
+}
+@keyframes moveDown {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(20px); /* Змініть значення на бажану висоту */
+    }
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@media screen and (max-width: 800px) {
+    .img-first{
+        width: 230px;
+        height: 215px;
+    }
+    .img-second{
+        width: 160px;
+        height: 200px;
+    }
+}
+.blur {
+    filter: blur(1px); 
+    transition: all 1.2s ease;
+}
+.blur:hover{
+    filter: none;
+}
