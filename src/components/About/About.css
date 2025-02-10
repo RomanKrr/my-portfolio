@@ -19,6 +19,7 @@
     height: 100vh;
     margin: 0;
     position: relative;
+    width: 100%;
 }
 
 .main-text-about {

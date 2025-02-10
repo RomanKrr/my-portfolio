@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import '../components/ScrollProgress.css'
 
 const ScrollProgressBar = () => {
     const [scrollProgress, setScrollProgress] = useState(0);
@@ -21,7 +22,7 @@ const ScrollProgressBar = () => {
         <div
             className="scroll-progress-bar"
             style={{
-                height: '3px',
+                height: '1px',
                 position: 'fixed',
                 bottom: 20,
                 left: '10%',
@@ -34,11 +35,11 @@ const ScrollProgressBar = () => {
             <div
                 className="scroll-progress-rectangle"
                 style={{
-                    width: '180px', // Ширина прямокутника
-                    height: '10px',
+                    width: '100px', // Ширина прямокутника
+                    height: '6px',
                     bottom: '-3px',
                     backgroundColor: 'black',
-                    border: '1px solid white',
+                    border: '0.5px solid white',
                     position: 'absolute',
                     left: `${scrollProgress}%`, // Розташування прямокутника вздовж лінії
                 }}

@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+    .scroll-progress-bar{
+        visibility: hidden;
+        
+    }
+    .scroll-progress-rectangle{
+        visibility: hidden;
+
+    }
+}

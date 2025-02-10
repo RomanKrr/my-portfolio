@@ -1,6 +1,5 @@
 import React from 'react'
 import AOS from 'aos';
-import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import About from './components/About/About';
@@ -10,6 +9,9 @@ import SocialBar from './components/SocialBar/SocialBar';
 import ScrollProgressBar from './components/ScrollProgressBar';
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
+import Form from './components/Form/Form';
+import MyForm from './components/Form/Form';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
       <ScrollProgressBar/>
       <Skills/>
       <Projects/>
+      <MyForm/>
+      <Footer/>
     </div>
   );
 }

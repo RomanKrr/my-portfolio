@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../Projects/Projects.css'
@@ -10,6 +10,10 @@ import img3 from '../../assets/Good.png'
 import img4 from '../../assets/watch.png'
 import img5 from '../../assets/cars.png'
 import img6 from '../../assets/block.jpg'
+import img7 from '../../assets/photo_2025-02-11_00-20-51.jpg'
+import img8 from '../../assets/photo_2025-02-11_00-51-52.jpg'
+import img9 from '../../assets/photo_2025-02-11_00-57-04.jpg'
+import img10 from '../../assets/photo_2025-02-11_01-03-20.jpg'
 
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
 
@@ -23,8 +27,8 @@ const Projects = () => {
             <Container>
                 <Row className="g-3  text-white my-5">
                     <Col xs={6} sm={4} md={4} className="text-center">
-                        <Card data-aos="zoom-in">
-                            <a href="/link-to-some-page">
+                        <Card data-aos="zoom-in" data-aos-duration="1300">
+                            <a href="">
                                 <Card.Img
                                     variant='top'
                                     src={img1}
@@ -45,7 +49,73 @@ const Projects = () => {
                         </Card>
                     </Col>
                     <Col xs={6} sm={4} md={4} className="text-center">
-                        <Card data-aos="zoom-in">
+                        <Card data-aos="zoom-in" data-aos-duration="1300">
+                            <a href="https://kw-vv81.onrender.com">
+                                <Card.Img
+                                    variant='top'
+                                    src={img8}
+                                    className='position-relative'
+                                />
+                                <div className="project-text card-overlay">
+                                    <span className='fs-5'>Перейти</span>
+                                </div>
+                                <Card.Body className='d-flex justify-content-center py-1'>
+                                    <Card.Title className="project-text text-black">
+                                        Tuning Atelier
+                                    </Card.Title>
+                                    {/* <Button className='card-button'>
+                                        <BsArrowUpRightCircleFill />
+                                    </Button> */}
+                                </Card.Body>
+                            </a>
+                        </Card>
+                    </Col>
+                    <Col xs={6} sm={4} md={4} className="text-center">
+                        <Card data-aos="zoom-in" data-aos-duration="1300">
+                            <a href="">
+                                <Card.Img
+                                    variant='top'
+                                    src={img3}
+                                    className='position-relative'
+                                />
+                                <div className="project-text card-overlay">
+                                    <span className='fs-5'>Перейти</span>
+                                </div>
+                                <Card.Body className='d-flex justify-content-center py-1'>
+                                    <Card.Title className="project-text text-black">
+                                        GooD4Me
+                                    </Card.Title>
+                                    {/* <Button className='card-button'>
+                                        <BsArrowUpRightCircleFill />
+                                    </Button> */}
+                                </Card.Body>
+                            </a>
+                        </Card>
+                    </Col>
+                    <Col xs={6} sm={4} md={4} className="text-center">
+                        <Card data-aos="zoom-in" data-aos-duration="1300">
+                            <a href="https://whimsical-kringle-d4b5d0.netlify.app/">
+                                <Card.Img
+                                    variant='top'
+                                    src={img7}
+                                    className='position-relative'
+                                />
+                                <div className="project-text card-overlay">
+                                    <span className='fs-5'>Перейти</span>
+                                </div>
+                                <Card.Body className='d-flex justify-content-center py-1'>
+                                    <Card.Title className="project-text text-black">
+                                        ThreeJs Garage
+                                    </Card.Title>
+                                    {/* <Button className='card-button'>
+                                        <BsArrowUpRightCircleFill />
+                                    </Button> */}
+                                </Card.Body>
+                            </a>
+                        </Card>
+                    </Col>
+                    <Col xs={6} sm={4} md={4} className="text-center">
+                        <Card data-aos="zoom-in" data-aos-duration="1300">
                             <a href="https://romankrr.github.io/name/">
                                 <Card.Img
                                     variant='top'
@@ -67,11 +137,11 @@ const Projects = () => {
                         </Card>
                     </Col>
                     <Col xs={6} sm={4} md={4} className="text-center">
-                        <Card data-aos="zoom-in">
-                            <a href="/link-to-some-page">
+                        <Card data-aos="zoom-in" data-aos-duration="1300">
+                            <a href="https://profound-otter-0fcda0.netlify.app/">
                                 <Card.Img
                                     variant='top'
-                                    src={img3}
+                                    src={img9}
                                     className='position-relative'
                                 />
                                 <div className="project-text card-overlay">
@@ -79,7 +149,7 @@ const Projects = () => {
                                 </div>
                                 <Card.Body className='d-flex justify-content-center py-1'>
                                     <Card.Title className="project-text text-black">
-                                        GooD4Me
+                                        StrideTm
                                     </Card.Title>
                                     {/* <Button className='card-button'>
                                         <BsArrowUpRightCircleFill />
@@ -89,11 +159,11 @@ const Projects = () => {
                         </Card>
                     </Col>
                     <Col xs={6} sm={4} md={4} className="text-center">
-                        <Card data-aos="zoom-in">
-                            <a href="https://romankrr.github.io/watch-site/">
+                        <Card data-aos="zoom-in" data-aos-duration="1300">
+                            <a href="https://try-8uqs.onrender.com/">
                                 <Card.Img
                                     variant='top'
-                                    src={img4}
+                                    src={img10}
                                     className='position-relative'
                                 />
                                 <div className="project-text card-overlay">
@@ -101,51 +171,7 @@ const Projects = () => {
                                 </div>
                                 <Card.Body className='d-flex justify-content-center py-1'>
                                     <Card.Title className="project-text text-black">
-                                        Watch
-                                    </Card.Title>
-                                    {/* <Button className='card-button'>
-                                        <BsArrowUpRightCircleFill />
-                                    </Button> */}
-                                </Card.Body>
-                            </a>
-                        </Card>
-                    </Col>
-                    <Col xs={6} sm={4} md={4} className="text-center">
-                        <Card data-aos="zoom-in">
-                            <a href="https://romankrr.github.io/watch-site/">
-                                <Card.Img
-                                    variant='top'
-                                    src={img5}
-                                    className='position-relative'
-                                />
-                                <div className="project-text card-overlay">
-                                    <span className='fs-5'>Перейти</span>
-                                </div>
-                                <Card.Body className='d-flex justify-content-center py-1'>
-                                    <Card.Title className="project-text text-black">
-                                        Cars Auction
-                                    </Card.Title>
-                                    {/* <Button className='card-button'>
-                                        <BsArrowUpRightCircleFill />
-                                    </Button> */}
-                                </Card.Body>
-                            </a>
-                        </Card>
-                    </Col>
-                    <Col xs={6} sm={4} md={4} className="text-center">
-                        <Card data-aos="zoom-in">
-                            <a href="https://romankrr.github.io/watch-site/">
-                                <Card.Img
-                                    variant='top'
-                                    src={img6}
-                                    className='position-relative'
-                                />
-                                <div className="project-text card-overlay">
-                                    <span className='fs-5'>Перейти</span>
-                                </div>
-                                <Card.Body className='d-flex justify-content-center py-1'>
-                                    <Card.Title className="project-text text-black">
-                                        Block Sheme Generator
+                                        ElectronicMagazine
                                     </Card.Title>
                                     {/* <Button className='card-button'>
                                         <BsArrowUpRightCircleFill />
