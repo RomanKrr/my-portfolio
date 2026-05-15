@@ -6,12 +6,14 @@
     justify-content: center;
     padding-top: 5rem;
 }
-.project-text{
+
+.project-text {
     font-family: Poppins;
     font-weight: 600;
     font-style: normal;
     color: white;
 }
+
 .card-button {
     display: flex;
     align-items: center;
@@ -25,9 +27,11 @@
     background: white;
     color: #FFA300;
 }
-.card-title{
+
+.card-title {
     font-size: 1.20rem;
 }
+
 .card-body {
     position: absolute;
     bottom: -100%;
@@ -41,7 +45,7 @@
     border-radius: 10px 10px 0 0;
     /* Закруглені кути на верхній стороні */
     padding: 10px;
-    
+
 }
 
 .card:hover .card-body {
@@ -51,15 +55,21 @@
 
 .card {
     position: relative;
-    /* Потрібно, щоб абсолютно позиціонований елемент був відносно карточки */
     overflow: hidden;
-    /* Сховаємо відступи контенту за межами карточки */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Тінь для карточки */
-    transition: box-shadow 0.3s;
-    
-    /* Анімація для тіні */
+    height: 260px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-img-top {
+    height: 100%;
+    object-fit: cover;
 }
 
 .card:hover {
@@ -107,9 +117,11 @@
         bottom: 0;
         padding: 0;
     }
-    .card-title{
+
+    .card-title {
         font-size: 1rem;
     }
+
     .card {
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         /* Збільшити тінь на малих пристроях */
@@ -117,5 +129,12 @@
 
     .card-overlay {
         margin-bottom: 10px;
+    }
+
+    .card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        height: 160px;
     }
 }

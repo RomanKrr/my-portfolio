@@ -13,7 +13,7 @@ import { FaFigma } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
-
+import { FaMobileAlt } from "react-icons/fa";
 
 const Skills = () => {
     useEffect(() => {
@@ -62,6 +62,10 @@ const Skills = () => {
                     <Col xs={6} sm={4} md={2} className="text-center" data-aos="fade-up" data-aos-duration="2300" data-aos-anchor-placement="center-bottom">
                         <SiMongodb className='skills-icon' />
                         <h2>MongoDb</h2>
+                    </Col>
+                    <Col xs={6} sm={4} md={2} className="text-center" data-aos="fade-up" data-aos-duration="2300" data-aos-anchor-placement="center-bottom">
+                        <FaMobileAlt className='skills-icon' />
+                        <h2>React Native</h2>
                     </Col>
                 </Row>
             </Container>

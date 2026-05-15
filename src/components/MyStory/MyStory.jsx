@@ -5,7 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import '../MyStory/MyStory.css'
 
 import img1 from '../../assets/story-image1.jpg'
-import img2 from '../../assets/story-image2.jpg'
+import img2 from '../../assets/story.jpg'
 import { FaArrowDown } from "react-icons/fa";
 
 const MyStory = () => {
